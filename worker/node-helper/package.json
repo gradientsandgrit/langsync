@@ -1,0 +1,23 @@
+{
+  "name": "node-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NEW_RELIC_APPLICATION_LOGGING_FORWARDING_ENABLED=true NODE_OPTIONS='-r dotenv/config -r newrelic' ts-node index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@notionhq/client": "^2.2.13",
+    "@types/express": "^4.17.17",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "newrelic": "^11.1.0",
+    "notion-to-md": "^3.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove left padding from dropdown */
+.rt-BaseMenuItem {
+  padding-left: var(--space-3) !important;
+}
+
+/* Remove underline border from tabs for "custom" variant used in data source picker */
+.rt-TabsTrigger[data-state="active"].custom::before {
+  background-color: transparent !important;
+}
+
+/* Add active state for tab trigger/button for "custom" variant used in data source picker */
+.rt-TabsTrigger[data-state="active"].custom > span.rt-TabsTriggerInner {
+  /*background-color: var(--accent-a3) !important;*/
+  background-color: var(--gray-a3) !important;
+}
+
+.rt-TextFieldInput:focus {
+  outline: none !important;
+}
